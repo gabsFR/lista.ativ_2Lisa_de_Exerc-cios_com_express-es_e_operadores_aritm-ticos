@@ -1,0 +1,14 @@
+ real venusano = 0.61519726
+    real marmitamos = 1.8808158
+    real juPetah = 11.862615
+    real ur_anus = 84.016846
+    real bob_esponj = 164.79132
+    real terra = 365.25
+
+  funcao inicio() {
+    
+    escreva("1. Venus leva aproximadamente 225 dias terrestres")
+   
+     
+  }
+}
