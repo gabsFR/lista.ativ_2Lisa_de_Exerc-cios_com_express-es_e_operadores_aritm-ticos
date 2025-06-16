@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    
+    inteiro idade
+    real idadesecs
+
+     escreva("Hj responderei algumas perguntas\n")
+      escreva("a. Quantas horas há em um ano?\n tem 8766 hrs em um ano só\n\n")
+       escreva("b. Quantos minutos há em uma década?\n há 5,256e+6 segundos em uma década, bem grande\n\n")
+        escreva("c. Qual é a sua idade? me fala e eu falarei qnts segundos se passaram desde seu nascimento em segundos\n")
+           leia(idade)
+             idadesecs = (31540000 * (idade * 1))
+               escreva("sua idade em segundos é", idadesecs ," segundos!!!!\n\n")
+         escreva("d. Quantos chocolates você pretende comer na vida?\n multiplos\n\n")
+          escreva("e. Se minha idade é de 977 milhões de segundos, qual é minha idade em anos?\n 30 anos")
+
+      
