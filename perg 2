@@ -1,14 +1,29 @@
- real venusano = 0.61519726
+programa {
+  real venusano = 0.61519726
     real marmitamos = 1.8808158
     real juPetah = 11.862615
     real ur_anus = 84.016846
     real bob_esponj = 164.79132
     real terra = 365.25
+    real agemerc = (32 * 365) / 88
+    real idade, planeta
 
   funcao inicio() {
     
-    escreva("1. Venus leva aproximadamente 225 dias terrestres")
+    escreva("1. Venus: 225 dias terrestres\n Marte: 687 dias\n Júpiter: 12 anos(ou 4332 dias)\n Urano: 84 anos (ou 30.660 dias)\n Netuno: 164,8 anos (ou 60.152 dias)\n")
+    escreva("2. sua idade em mercurio é: ", agemerc,"\n")
+    escreva("3.qual tua idade e um planeta?\n venus é 1, marte é 2, jupiter é 3, urano é 4 e netuno é 5:\n")
+    leia(idade, planeta)
+      se(planeta == 1){
+        escreva("vc tem ", (idade * 365)/225," anos")
+      }
+      se(planeta == 2){
+        escreva("vc tem ", (idade * 365)/687," anos")
+      }se(planeta == 3){
+        escreva("vc tem ", (idade * 365)*12," anos")
+      }
    
      
   }
 }
+
