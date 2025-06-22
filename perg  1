@@ -1,17 +1,21 @@
 programa {
   funcao inicio() {
-    
+    inteiro horas
+    inteiro hrsano = 24 * 365
+    inteiro mindec = 10 * (8760 * 60) 
+    inteiro  secs = 977.000.000
     inteiro idade
     real idadesecs
+    real agesecs2 = 31.557.600
 
      escreva("Hj responderei algumas perguntas\n")
-      escreva("a. Quantas horas há em um ano?\n tem 8766 hrs em um ano só\n\n")
-       escreva("b. Quantos minutos há em uma década?\n há 5,256e+6 segundos em uma década, bem grande\n\n")
+      escreva("a. Quantas horas há em um ano?\n tem ", hrsano, "hrs em um ano só\n\n")
+       escreva("b. Quantos minutos há em uma década?\n há ", mindec, " segundos em uma década, bem grande\n\n")
         escreva("c. Qual é a sua idade? me fala e eu falarei qnts segundos se passaram desde seu nascimento em segundos\n")
            leia(idade)
              idadesecs = (31540000 * (idade * 1))
-               escreva("sua idade em segundos é", idadesecs ," segundos!!!!\n\n")
+               escreva("sua idade em segundos é ", idadesecs ," segundos!!!!\n\n")
          escreva("d. Quantos chocolates você pretende comer na vida?\n multiplos\n\n")
-          escreva("e. Se minha idade é de 977 milhões de segundos, qual é minha idade em anos?\n 30 anos")
-
-      
+          escreva("e. Se minha idade é de 977 milhões de segundos, qual é minha idade em anos?\n", agesecs2 / secs, " anos, ou 32 anos")
+  }
+}
