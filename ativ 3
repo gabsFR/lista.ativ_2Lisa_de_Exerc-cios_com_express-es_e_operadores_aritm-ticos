@@ -1,0 +1,11 @@
+programa {
+
+  inteiro mat1, mat2,  mat3, mat4, mat5, mat6
+  inteiro tempo = 100
+  inteiro estudo = (tempo / 6) 
+  inteiro tplivre = 24 - 8 - 1
+  funcao inicio() {
+    escreva("se fulano de tal usasse o mesmo tempo de estudo para todas as suas materias, ele gastaria ", estudo," minutos por disciplina, e lhe sobraria ", tplivre ," horas de tempo livre")
+
+  }
+}
