@@ -1,0 +1,14 @@
+programa {
+
+  inteiro tab1 = 300
+  inteiro tab2 = 400
+  inteiro tab3 = 500
+  inteiro tramontina = 45
+  inteiro resto
+  funcao inicio() {
+    escreva("aq ta as opçoes de tabua uésley:\n")
+     escreva("A tabua de 3 metros podera ser cortada ", 300 / 45," vezes, e sobrara ", 300 % 45,"cm\n")
+      escreva("A tabua de 4 metros podera ser cortada ", 400 / 45," vezes, e sobrara ", 400 % 45,"cm\n")
+       escreva("A tabua de 5 metros podera ser cortada ", 500 / 45, "vezes, e sobrara ", 500 % 45,"cm")
+  }
+}
