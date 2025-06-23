@@ -7,8 +7,8 @@ programa {
   inteiro resto
   funcao inicio() {
     escreva("aq ta as opçoes de tabua uésley:\n")
-     escreva("A tabua de 3 metros podera ser cortada ", 300 / 45," vezes, e sobrara ", 300 % 45,"cm\n")
-      escreva("A tabua de 4 metros podera ser cortada ", 400 / 45," vezes, e sobrara ", 400 % 45,"cm\n")
-       escreva("A tabua de 5 metros podera ser cortada ", 500 / 45, "vezes, e sobrara ", 500 % 45,"cm")
+     escreva("A tabua de 3 metros podera ser cortada ", tab1 / tramontina," vezes, e sobrara ", 300 % 45,"cm\n")
+      escreva("A tabua de 4 metros podera ser cortada ", tab2 / tramontina," vezes, e sobrara ", 400 % 45,"cm\n")
+       escreva("A tabua de 5 metros podera ser cortada ", tab3 / tramontina, "vezes, e sobrara ", 500 % 45,"cm")
   }
 }
