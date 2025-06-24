@@ -1,0 +1,9 @@
+programa {
+  inteiro mb
+  inteiro mbps
+  funcao inicio() {
+    escreva("qual o tamanho do arquivo(em MB) e qual seu mbps: ")
+     leia(mb, mbps)
+      escreva("seu tempo de download é ", mb / (mbps / 8), " segundos" )
+  }
+}
