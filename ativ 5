@@ -1,0 +1,15 @@
+programa {
+
+  inteiro ler = 5
+  inteiro hrsano = 8736
+  inteiro ano = 365
+  inteiro semano = 52
+  inteiro mano = 524160
+  funcao inicio() {
+    
+    hrsano = semano * 168
+    mano = hrsano * 60
+     inteiro lerano = 104832
+    escreva("ele tera dedicado no final do ano ",lerano / 60," horas a seu livro.")
+  }
+}
