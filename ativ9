@@ -2,13 +2,14 @@ programa {
   inteiro msquare
   inteiro latalitro = 18
   inteiro lata
-  inteiro preco = 480.00
+  real preco
   funcao inicio() {
     escreva("qnts metros quadrados vc quer preencher? ")
      leia(msquare)
-     lata = latalitro
+     lata = (msquare / 3) / latalitro
+     preco = lata * 480.00
       se(msquare < 54){escreva("eu n consigo te vender menos q uma lata o cabeça")}
        
-      se(msquare >= 54){escreva("vc vai ter q levar ", lata)}
+      se(msquare >= 54){escreva("vc vai ter q levar ", lata, ", e lhe custara ", preco, " reais")}
 }
 }
