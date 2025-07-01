@@ -1,29 +1,120 @@
 programa {
-  real venusano = 0.61519726
-    real marmitamos = 1.8808158
-    real juPetah = 11.862615
-    real ur_anus = 84.016846
-    real bob_esponj = 164.79132
-    real terra = 365.25
-    real agemerc = (32 * 365) / 88
-    real idade, planeta
+  	
+  	real venusano = 0.61519726
+  	real mercuriano = 0.2408467
+   	real marmitamos = 1.8808158
+    	real juPetah = 11.862615
+    	real uranus = 84.016846
+    	real bob_esponj = 164.79132
+    	real terra = 365.25
+    	real agemerc = (32 * 365) / 88
+    	inteiro idade, planeta
+    	real resultado = 0.0
 
-  funcao inicio() {
-    
-    escreva("1. Venus: 225 dias terrestres\n Marte: 687 dias\n Júpiter: 12 anos(ou 4332 dias)\n Urano: 84 anos (ou 30.660 dias)\n Netuno: 164,8 anos (ou 60.152 dias)\n")
-    escreva("2. sua idade em mercurio é: ", agemerc,"\n")
-    escreva("3.qual tua idade e um planeta?\n venus é 1, marte é 2, jupiter é 3, urano é 4 e netuno é 5:\n")
-    leia(idade, planeta)
-      se(planeta == 1){
-        escreva("vc tem ", (idade * 365)/225," anos")
-      }
-      se(planeta == 2){
-        escreva("vc tem ", (idade * 365)/687," anos")
-      }se(planeta == 3){
-        escreva("vc tem ", (idade * 365)*12," anos")
-      }
+  	funcao inicio() {
+
+		escreva("a) \n")
+
+  		resultado = 365 * venusano
+    		escreva("Venus:", resultado ," \n")
+
+    		resultado = 365 * marmitamos
+    		escreva("marte:", resultado ," \n")
+
+    		resultado = 365 * juPetah
+    		escreva("jupiter:", resultado ," \n")
+
+    		resultado = 365 * uranus
+    		escreva("urano:", resultado ," \n")
+
+    		resultado = 365 * bob_esponj
+    		escreva("netuno:", resultado ," \n")
+
    
-     
-  }
-}
+ 		escreva("2. sua idade em mercurio é: ", agemerc,"\n")
+    
+    
+    		escreva("3.qual tua idade e um planeta?\n venus é 1, marte é 2, jupiter é 3, urano é 4 e netuno é 5:\n")
+       	leia(idade, planeta)
 
+
+		escolha(planeta){
+
+			caso 1: 
+				escreva("em venus voce teria ",(idade * 365) / 225 ," anos.\n")
+			     pare
+			caso 2: 
+				escreva("em marte voce teria ",(idade * 365) / 686 ," anos.\n")
+			     pare
+			caso 3:
+			     escreva("em jupiter voce teria ",(idade * 365) / 4329 ," anos.\n")
+			     pare
+			caso 4:
+			     escreva("em urano voce teria ",(idade * 365) / 30666 ," anos, vc n existe ainda\n")
+			     pare
+		     caso 5:
+		          escreva("em netuno voce teria ",(idade * 365) / 60148 ," anos, vc n existe ainda\n")
+		          pare
+			caso contrario: escreva("esse planeta n esta na lista\n")
+			pare
+		}
+
+           
+
+           inteiro idade_venus, idade_marte, idade_jupiter, idade_urano, idade_netuno
+           cadeia sou_mais_jovem_em = ""
+           real idade_mais_jovem = idade
+           
+
+           idade_venus = idade / 0.61519726
+		 idade_marte = idade / 1.8808158
+		 idade_jupiter = idade / 11.862615
+		 idade_urano = idade / 84.016846
+		 idade_netuno = idade / 164.79132
+
+
+		se(idade_mais_jovem >= idade_venus){
+
+			sou_mais_jovem_em = "venus"
+			idade_mais_jovem = idade_venus
+			
+		} 
+		
+		se(idade_mais_jovem >= idade_marte){
+
+			sou_mais_jovem_em = "marte"
+			idade_mais_jovem = idade_marte
+			
+		} 
+		
+		se(idade_mais_jovem >= idade_jupiter){
+
+			sou_mais_jovem_em = "jupiter"
+			idade_mais_jovem = idade_jupiter
+			
+		} 
+		
+		se(idade_mais_jovem >= idade_urano){
+
+			sou_mais_jovem_em = "urano"
+			idade_mais_jovem = idade_urano
+			
+		} 
+		
+		se(idade_mais_jovem >= idade_netuno){
+
+			sou_mais_jovem_em = "netuno"
+			idade_mais_jovem = idade_netuno
+		} 
+
+
+		escreva("Sou mais jovem no planeta ", sou_mais_jovem_em, "\n")
+		escreva("Terei ", idade_mais_jovem, " anos\n")
+
+
+		 
+
+           
+       	
+     }
+}
